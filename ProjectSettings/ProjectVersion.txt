@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 m_EditorVersion: 2019.4.13f1
 m_EditorVersionWithRevision: 2019.4.13f1 (518737b1de84)
+=======
+m_EditorVersion: 2018.4.28f1
+>>>>>>> parent of e4cb2b9... Revert "pistooli, joka ampuu ja lataa"
