@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float leftLimit = -40;
-    public float rightlimit = 40;
+    public float leftLimit = -250;
+    public float rightlimit = 250;
+    public float uplimit = 50;
     public int damage = 5;
     enemy Enemyhp;
 
@@ -20,6 +21,9 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
         else if (transform.position.x > rightlimit)
+
+            Destroy(gameObject);
+        else if (transform.position.y > uplimit)
 
             Destroy(gameObject);
     }
