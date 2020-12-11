@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class enemy : MonoBehaviour
 {
-    public float Health = 100;
- 
     // Start is called before the first frame update
     void Start()
     {
@@ -17,24 +15,16 @@ public class EnemyHealth : MonoBehaviour
     {
         
     }
-    
-        
-     void OnCollisionEnter(Collision other)
-     {
+    public void OnCollisionEnter(Collision other)
+    {
         if (other.gameObject.tag == "bullet")
         {
-            if (Health <= 0)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
+            
+
+
+
         }
 
-                
-            
-     }
-        
-            
-            
-        
-        
+    }
 }
