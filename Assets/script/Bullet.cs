@@ -6,7 +6,8 @@ public class Bullet : MonoBehaviour
 {
     public float leftLimit = -40;
     public float rightlimit = 40;
-
+    public int damage = 5;
+    enemy Enemyhp;
 
     // Start is called before the first frame update
 
@@ -33,6 +34,8 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            Enemyhp = other.transform.GetComponent<enemy>();
+            Enemyhp.Health--;
             Destroy(gameObject);
             
 

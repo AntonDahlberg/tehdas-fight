@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
+    public int Health;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,14 @@ public class enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "bullet")
         {
-            Destroy(gameObject);
+            if (Health <= 0)
+            {
+
+                Destroy(gameObject);
+            }
+          
+            
+            
             
 
 
