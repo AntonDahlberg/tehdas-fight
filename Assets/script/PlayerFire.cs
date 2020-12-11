@@ -48,7 +48,7 @@ public class PlayerFire : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1"))
             {
-                Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
+               Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
 
                 instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
                 playerAudio.PlayOneShot(otherClip, 1.0f);
