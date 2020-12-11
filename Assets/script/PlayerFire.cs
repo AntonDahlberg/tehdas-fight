@@ -61,7 +61,9 @@ public class PlayerFire : MonoBehaviour
 
             }
             IEnumerator reload()
-            {
+        {
+            
+            
                 isReloading = true;
                 Debug.Log("Reloading...");
                 animator.SetBool("Reloading", true);
@@ -70,10 +72,13 @@ public class PlayerFire : MonoBehaviour
                 animator.SetBool("Reloading", false);
                 yield return new WaitForSeconds(.25f);
 
-            currentAmmo = maxAmmo;
+                currentAmmo = maxAmmo;
                 isReloading = false;
+            
+        
                 
-            }
+                
+        }
         
         
 
