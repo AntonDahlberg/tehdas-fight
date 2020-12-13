@@ -7,7 +7,7 @@ public class PlayerFire : MonoBehaviour
 
     public Rigidbody projectile;
 
-    public float speed = 20;
+    public float speed;
     public Animator Aim;
     public Animator animator;
 
