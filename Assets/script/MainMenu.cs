@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void  Playgame ()
     {
         SceneManager.LoadScene("SampleScene");
@@ -15,3 +21,4 @@ public class MainMenu : MonoBehaviour
     }
     
 }
+
