@@ -23187,6 +23187,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 2584359837954691401, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359838120306391, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359838544046019, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2584359839021172296, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -23195,6 +23210,11 @@ PrefabInstance:
     - target: {fileID: 2584359839021172296, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
       propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359839021172297, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2584359839021172301, guid: 690faeb113ad9f645a705f1bf0f00dcc,
@@ -23218,6 +23238,16 @@ PrefabInstance:
       propertyPath: ammodisplay
       value: 
       objectReference: {fileID: 141782695}
+    - target: {fileID: 2584359839207767897, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359839303157722, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2584359839316002498, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23292,6 +23322,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359839316002499, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359839733454818, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359839960750943, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359840009711008, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359840021274996, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584359840050477878, guid: 690faeb113ad9f645a705f1bf0f00dcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 690faeb113ad9f645a705f1bf0f00dcc, type: 3}
