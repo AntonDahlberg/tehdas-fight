@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerFire : MonoBehaviour
 {
 
     public Rigidbody projectile;
-
+    public Text ammodisplay;
     public float speed;
     public Animator Aim;
     public Animator animator;
@@ -36,6 +37,7 @@ public class PlayerFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ammodisplay.text = currentAmmo.ToString();
         if (isReloading)
             return;
         if(currentAmmo <= 0)
@@ -43,6 +45,7 @@ public class PlayerFire : MonoBehaviour
             StartCoroutine(reload());
             return;
         }
+        
         
         
 
