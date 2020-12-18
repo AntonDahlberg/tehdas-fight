@@ -7675,7 +7675,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 67, y: 10.4, z: 26.8}
   m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: [{fileID: 1620827979}, {fileID: 1724019797}]
+  m_Children:
+  - {fileID: 1620827979}
+  - {fileID: 1724019797}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10849,7 +10851,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8018868, g: 0.7054334, b: 0.47281063, a: 1}
-  m_Intensity: 1.53
+  m_Intensity: 0.71
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -24249,7 +24251,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 95.310776, y: -2.4578052, z: 405.21133}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: [{fileID: 705507995}]
+  m_Children:
+  - {fileID: 705507995}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
