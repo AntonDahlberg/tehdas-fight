@@ -23481,7 +23481,7 @@ PrefabInstance:
     - target: {fileID: 2584359839021172301, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
       propertyPath: speed
-      value: 80
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2584359839021172301, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
@@ -23501,7 +23501,7 @@ PrefabInstance:
     - target: {fileID: 2584359839316002498, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.12
+      value: 1.59
       objectReference: {fileID: 0}
     - target: {fileID: 2584359839316002498, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
@@ -23511,7 +23511,7 @@ PrefabInstance:
     - target: {fileID: 2584359839316002498, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.38
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 2584359839316002498, guid: 690faeb113ad9f645a705f1bf0f00dcc,
         type: 3}
@@ -28982,7 +28982,7 @@ MonoBehaviour:
   bullet: {fileID: 7252137536910962814, guid: cc44e403834edaa4ba7c9056493fe91a, type: 3}
   shootPoint: {fileID: 1620827979}
   shootSpeed: 160
-  TimetoShoot: 2
+  TimetoShoot: 1
 --- !u!43 &1749294476
 Mesh:
   m_ObjectHideFlags: 0
