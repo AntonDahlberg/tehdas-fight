@@ -126,4 +126,4 @@ MonoBehaviour:
   leftLimit: -250
   rightlimit: 250
   uplimit: 50
-  damage: 43
+  damage: 20
