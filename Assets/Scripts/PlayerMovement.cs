@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip otherClip;
     private AudioSource playerAudio;
     public AudioClip sprintClip;
+    public AudioClip jumpClip;
 
 
     // Update is called once per frame
@@ -98,7 +99,10 @@ public class PlayerMovement : MonoBehaviour
         //if space is pressed, jump
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); 
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
+                playerAudio.PlayOneShot(jumpClip, 1.0f);
+            
 
         }
         if (Input.GetKey("left shift"))

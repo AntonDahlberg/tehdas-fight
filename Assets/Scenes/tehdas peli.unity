@@ -21133,6 +21133,7 @@ MonoBehaviour:
   isCrouched: 0
   otherClip: {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
   sprintClip: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  jumpClip: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
 --- !u!143 &1753846304
 CharacterController:
   m_ObjectHideFlags: 0
