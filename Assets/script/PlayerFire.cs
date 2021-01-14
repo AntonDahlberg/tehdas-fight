@@ -60,7 +60,7 @@ public class PlayerFire : MonoBehaviour
         }
             if (Input.GetButtonDown("Fire2"))
             {
-                Aim.SetTrigger("tahtain");
+                
 
             }
             IEnumerator reload()
