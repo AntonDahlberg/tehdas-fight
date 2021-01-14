@@ -16,13 +16,26 @@ public class PlayerMovement : MonoBehaviour
     public float crouchWalkSpeed;
     public bool isCrouching = false;
     public bool isCrouched = false;
+    private float _timeSinceLastStepPlayed;
 
 
     Vector3 velocity;
     bool isGrounded;
+    public AudioClip otherClip;
+    private AudioSource playerAudio;
     
-    // Update is called once per frame
+    
 
+    // Update is called once per frame
+    void Start()
+    {
+        playerAudio = GetComponent<AudioSource>();
+       
+        
+
+
+
+    }
     void Update()
     {
         Crouch();
@@ -35,9 +48,21 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
 
         }
+        
+        if (Input.GetKey(KeyCode.W))
+        {
+            _timeSinceLastStepPlayed += Time.deltaTime;
+            if (_timeSinceLastStepPlayed > 1)
+            {
+                _timeSinceLastStepPlayed = 0;
+                playerAudio.PlayOneShot(otherClip, 1.0f);
+            }
+        }
+
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+
 
         Vector3 move = transform.right * x + transform.forward * z;
 
