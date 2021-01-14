@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     public AudioClip otherClip;
     private AudioSource playerAudio;
-    
-    
+    public AudioClip sprintClip;
+
 
     // Update is called once per frame
     void Start()
@@ -58,6 +58,33 @@ public class PlayerMovement : MonoBehaviour
                 playerAudio.PlayOneShot(otherClip, 1.0f);
             }
         }
+        if (Input.GetKey(KeyCode.A))
+        {
+            _timeSinceLastStepPlayed += Time.deltaTime;
+            if (_timeSinceLastStepPlayed > 1)
+            {
+                _timeSinceLastStepPlayed = 0;
+                playerAudio.PlayOneShot(otherClip, 1.0f);
+            }
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            _timeSinceLastStepPlayed += Time.deltaTime;
+            if (_timeSinceLastStepPlayed > 1)
+            {
+                _timeSinceLastStepPlayed = 0;
+                playerAudio.PlayOneShot(otherClip, 1.0f);
+            }
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            _timeSinceLastStepPlayed += Time.deltaTime;
+            if (_timeSinceLastStepPlayed > 1)
+            {
+                _timeSinceLastStepPlayed = 0;
+                playerAudio.PlayOneShot(otherClip, 1.0f);
+            }
+        }
 
 
         float x = Input.GetAxis("Horizontal");
@@ -74,10 +101,17 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); 
 
         }
-        if (Input.GetKeyDown("left shift"))
+        if (Input.GetKey("left shift"))
         {
             speed = 15;
+            _timeSinceLastStepPlayed += Time.deltaTime;
+            if (_timeSinceLastStepPlayed > 1)
+            {
+                _timeSinceLastStepPlayed = 0;
+                playerAudio.PlayOneShot(sprintClip, 1.0f);
+            }
         }
+       
         if (Input.GetKeyUp("left shift"))
         {
             speed = 5;
