@@ -57,12 +57,8 @@ public class PlayerFire : MonoBehaviour
                 playerAudio.PlayOneShot(otherClip, 1.0f);
                 currentAmmo--;
 
-        }
-            if (Input.GetButtonDown("Fire2"))
-            {
-                
-
             }
+            
             IEnumerator reload()
             {
                 isReloading = true;
