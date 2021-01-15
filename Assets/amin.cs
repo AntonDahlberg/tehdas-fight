@@ -40,11 +40,11 @@ public class amin : MonoBehaviour
         {
             if (aimina)
             {
-                Vector3 temp = transform.position;
+                Vector3 temp = transform.localPosition;
                 temp.y = -1.89f;
                 temp.x = 0.92f;
                 temp.z = 1.71f;
-                transform.position = temp;
+                transform.localPosition = temp;
 
                 if (temp.y <= -1.89f)
                 {
@@ -58,11 +58,11 @@ public class amin : MonoBehaviour
         {
             if (aimina)
             {
-                Vector3 temp = transform.position;
+                Vector3 temp = transform.localPosition;
                 temp.y = -1.74f;
                 temp.x = 0.008408546f;
                 temp.z = 1.2198f;
-                transform.position = temp;
+                transform.localPosition = temp;
 
 
             }
