@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour
 {
     public int Health;
+    public Text heal;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,7 @@ public class playerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        heal.text = Health.ToString();
 
     }
     public void OnCollisionEnter(Collision other)
