@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void  Playgame ()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("tehdas peli");
     }
     public void QuitGame ()
     {
