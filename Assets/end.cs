@@ -13,6 +13,7 @@ public class end : MonoBehaviour
         {
             endgame.gameObject.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
+            Destroy(gameObject);
         }
     }
 }
