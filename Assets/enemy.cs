@@ -5,7 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class enemy : MonoBehaviour
 {
+    public GameObject[] obj;
+    //public GameObject obj;
+    public float spawnMin;
+    public float spawnMax;
     public int Health;
+    public int Enemyleft;
     public GameObject endgame;
     playerHealth Playerhp;
     // Start is called before the first frame update
@@ -26,8 +31,13 @@ public class enemy : MonoBehaviour
             if (Health <= 0)
             {
                 
+                
                     Destroy(gameObject);
                     endgame.gameObject.SetActive(false);
+
+                
+
+                    
 
             }
           
@@ -38,6 +48,14 @@ public class enemy : MonoBehaviour
 
 
         }
+
+    }
+    void Spawn()
+
+    {
+        
+        Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
+        Invoke("Spawn", Random.Range(spawnMin, spawnMax));
 
     }
     public void Youwon()
