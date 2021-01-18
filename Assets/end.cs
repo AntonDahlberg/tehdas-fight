@@ -12,8 +12,9 @@ public class end : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             endgame.gameObject.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
             Destroy(gameObject);
+            Cursor.lockState = CursorLockMode.None;
+            
         }
     }
 }

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class enemy : MonoBehaviour
 {
     public int Health;
+    public GameObject endgame;
+    playerHealth Playerhp;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +25,10 @@ public class enemy : MonoBehaviour
         {
             if (Health <= 0)
             {
-
-                Destroy(gameObject);
-                Youwon();
+                
+                Destroy(gameObject);               
+                endgame.gameObject.SetActive(false);
+                
 
 
 

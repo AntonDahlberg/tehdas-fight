@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - bullet1
   - maa
+  - seina
+  - seina1
   layers:
   - Default
   - TransparentFX
