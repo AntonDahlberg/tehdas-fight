@@ -9,7 +9,7 @@ public class koske : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "seina1")
+        if (other.gameObject.tag == "seina")
         {
             seinan.gameObject.SetActive(false);
             
