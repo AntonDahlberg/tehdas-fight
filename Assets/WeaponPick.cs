@@ -8,6 +8,7 @@ public class WeaponPick : MonoBehaviour
     public float distance = 10f;
     GameObject currentWeapon;
     GameObject wp;
+    PlayerFire firing;
 
     bool canGrab;
 
@@ -59,6 +60,8 @@ public class WeaponPick : MonoBehaviour
         currentWeapon.transform.parent = null;
         currentWeapon.GetComponent<Rigidbody>().isKinematic = false;
         currentWeapon = null;
+        
+
     }
 
 }
