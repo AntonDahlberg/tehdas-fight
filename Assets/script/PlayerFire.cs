@@ -11,6 +11,9 @@ public class PlayerFire : MonoBehaviour
     public float speed;
     public Animator Aim;
     public Animator animator;
+    public float firerate;
+    private float nextFire;
+    
 
     public int maxAmmo = 10;
     public int currentAmmo;
@@ -49,13 +52,30 @@ public class PlayerFire : MonoBehaviour
         
         
 
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButton("Fire1") && Time.time >= nextFire)
             {
-               Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
+                firerate = 1;
+                nextFire = Time.time + 1f / firerate;
+                Fire();
+               
 
-                instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
-                playerAudio.PlayOneShot(otherClip, 1.0f);
-                currentAmmo--;
+            }
+        if (Input.GetButton("Fire2") && Time.time >= nextFire)
+        {
+            firerate = 10;
+            nextFire = Time.time + 1f / firerate;
+            Fire();
+
+
+        }
+        void Fire()
+            {
+            Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
+
+            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
+            playerAudio.PlayOneShot(otherClip, 1.0f);
+            currentAmmo--;
+            
 
             }
             
