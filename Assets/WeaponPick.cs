@@ -8,7 +8,7 @@ public class WeaponPick : MonoBehaviour
     public float distance = 10f;
     GameObject currentWeapon;
     GameObject wp;
-    PlayerFire firing;
+    
 
     bool canGrab;
 
@@ -20,8 +20,8 @@ public class WeaponPick : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E))
             {
                 if (currentWeapon != null)
-                    Drop();
-                PickUp();
+                    PickUp();
+                    PickUp();
             }
         }
         if(currentWeapon != null)
