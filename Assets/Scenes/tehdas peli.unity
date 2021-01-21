@@ -28009,25 +28009,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2144888369}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1000012383973494 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3947709244744549181, guid: 5db842425d1ca7747b9f953eb3f5bdc4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3948136411553379147}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1000012383973495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000012383973494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34b6a6283cd65ee4199d271fa96cddd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seinan: {fileID: 0}
 --- !u!4 &4000011579254949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6551561121830221673, guid: f2e0f757bf1bcc74fb0c98996d25435f,
@@ -28239,7 +28220,7 @@ PrefabInstance:
     - target: {fileID: 3946469220485559329, guid: 5db842425d1ca7747b9f953eb3f5bdc4,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3946469220485559329, guid: 5db842425d1ca7747b9f953eb3f5bdc4,
         type: 3}
