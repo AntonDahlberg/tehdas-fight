@@ -33,7 +33,7 @@ public class enemy : MonoBehaviour
             {
                     Destroy(gameObject);
                     Drop();                    
-                    endgame.gameObject.SetActive(false);
+                   
 
                 
 
