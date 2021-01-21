@@ -13,6 +13,7 @@ public class enemy : MonoBehaviour
     public int Enemyleft;
     public GameObject endgame;
     playerHealth Playerhp;
+    public GameObject key;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +31,8 @@ public class enemy : MonoBehaviour
         {
             if (Health <= 0)
             {
-                
                     Destroy(gameObject);
+                    Drop();                    
                     endgame.gameObject.SetActive(false);
 
                 
@@ -60,5 +61,14 @@ public class enemy : MonoBehaviour
     public void Youwon()
     {
         SceneManager.LoadScene("You win");
+    }
+    private void Drop()
+    {
+        key.transform.parent = null;
+        key.GetComponent<Rigidbody>().isKinematic = true;
+        key.gameObject.SetActive(true);
+        key = null;
+
+
     }
 }

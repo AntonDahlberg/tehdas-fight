@@ -37,7 +37,7 @@ public class WeaponPick : MonoBehaviour
         {
             if (hit.transform.tag == "CanGrap")
             {
-                Debug.Log("I can grap it!");
+              
                 canGrab = true;
                 wp = hit.transform.gameObject;
             }
