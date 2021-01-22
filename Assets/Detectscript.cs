@@ -12,10 +12,12 @@ public class Detectscript : MonoBehaviour
     public float shootSpeed;
     public float TimetoShoot;
     float originalTime;
+   
     // Start is called before the first frame update
     void Start()
     {
-        originalTime = TimetoShoot;   
+        originalTime = TimetoShoot;
+        
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class Detectscript : MonoBehaviour
         {
             detected = true;
             target = other.gameObject;
+            
         }
     }
     private void Shootplayer()

@@ -9,11 +9,13 @@ public class patroller : MonoBehaviour
 
     private int waypointIndex;
     private float dist;
+    
     // Start is called before the first frame update
     void Start()
     {
         waypointIndex = 0;
         transform.LookAt(waypoints[waypointIndex].position);
+        
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class patroller : MonoBehaviour
     void Patrol()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
+       
     }
     void indexpatrol()
     {
